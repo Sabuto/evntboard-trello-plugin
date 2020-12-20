@@ -36,10 +36,6 @@ class TrelloPlugin {
     this.evntBus?.newEvent('trello-plugin-unload')
   }
 
-  async sampleMethod(aSampledata) {
-    this.evntBus?.newEvent('sample-plugin-new-data', aSampledata)
-  }
-
   async getBoard(boardName) {
     return this.boards.get(boardName)
   }
@@ -57,9 +53,9 @@ class TrelloPlugin {
     const update = await axios.post(`https://api.trello.com/1/cards?key=${this.key}&token=${this.token}&idList=${chosenList}&name=${name}&desc=${desc}`)
 
     if(update.status == '200') {
-      this.evntBus?.newEvent('trello-plugin-addCard', 'Success!')
+      this.evntBus?.newEvent('trello-plugin-addCard', { response: 'Success' })
     } else {
-      this.evntBus?.newEvent('trello-plugin-addCard', 'Failed!')
+      this.evntBus?.newEvent('trello-plugin-addCard', { response: 'Failed' })
     }
 
     return update

@@ -1,7 +1,3 @@
-# How to create your plugin ?
+# Trello plugin for EvntBoard
 
-Change the 'name' field of the 'package.json' file with the name of your plugin.
-
-Change the fields 'id', 'name' and 'description' in the file 'src/index.js' with the information of your plugin.
-
-Code what do you want but keep 'index.js' exports and plugin class format
+This plugin allows you to interact with the trello API. Currently it only supports adding a card to a certain list on a certain board. I will update this when i can.

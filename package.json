@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EvntBoard/module-sample.git"
+    "url": "git+https://github.com/Sabuto/evntboard-trello-plugin.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EvntBoard/module-sample/issues"
+    "url": "https://github.com/Sabuto/evntboard-trello-plugin/issues"
   },
-  "homepage": "https://github.com/EvntBoard/module-sample#readme",
+  "homepage": "https://github.com/Sabuto/evntboard-trello-plugin#readme",
   "dependencies": {
     "axios": "^0.21.0"
   }
